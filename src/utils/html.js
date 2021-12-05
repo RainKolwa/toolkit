@@ -4,7 +4,7 @@
  */
 export const removeTag = (content) => {
   return typeof content === "string"
-    ? content.replace(/\<\/?[a-zA-Z].*?\>+/gm, "")
+    ? content.replace(/<\/?[a-zA-Z].*?>+/gm, "")
     : "";
 };
 
@@ -13,6 +13,6 @@ export const removeTag = (content) => {
  */
 export const removeStyle = (content) => {
   return typeof content === "string"
-    ? content.replace(/\<style.*?\>.*?\<\/style\>/gm, "")
+    ? content.replace(/<style.*?>.*?<\/style>/gm, "")
     : "";
 };

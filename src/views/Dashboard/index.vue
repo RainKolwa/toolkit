@@ -16,7 +16,7 @@
 import projectList from "./config";
 
 export default {
-  name: "Dashboard",
+  name: "DashboardPage",
   data() {
     return {
       list: projectList,
