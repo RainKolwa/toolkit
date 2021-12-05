@@ -1,17 +1,30 @@
 <template>
   <div>
-    <h1>TOOLS KIT</h1>
+    <div class="header container mx-auto">
+      <h1>{{ title }}</h1>
+    </div>
     <router-view></router-view>
   </div>
 </template>
 
-<style>
+<script>
+export default {
+  computed: {
+    title() {
+      return this.$route.meta.title;
+    },
+  },
+};
+</script>
+
+<style lang="less" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  @apply antialiased;
+}
+.header {
+  h1 {
+    @apply text-4xl font-bold py-4;
+  }
 }
 </style>
