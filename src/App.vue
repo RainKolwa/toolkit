@@ -3,10 +3,10 @@ import Dashboard from "./views/Dashboard/index.vue";
 </script>
 
 <template>
-<div>
-  <h1>TOOLS KIT</h1>
-  <router-view></router-view>
-</div>
+  <div>
+    <h1>TOOLS KIT</h1>
+    <router-view></router-view>
+  </div>
 </template>
 
 <style>
