@@ -1,6 +1,6 @@
 /**
  * 移除HTML标签
- * @param {*} content : ;
+ * @param {String} content html
  */
 export const removeTag = (content) => {
   return typeof content === "string"
@@ -10,6 +10,7 @@ export const removeTag = (content) => {
 
 /**
  * 移除内联样式表
+ * @param {String} content html
  */
 export const removeStyle = (content) => {
   return typeof content === "string"
