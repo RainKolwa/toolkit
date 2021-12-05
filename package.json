@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.2.16",
@@ -15,7 +16,13 @@
     "eslint": "^8.4.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^8.1.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
     "prettier": "2.5.1",
     "vite": "^2.6.4"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint --cache --fix",
+    "*.{js,vue,css,md}": "prettier --write"
   }
 }

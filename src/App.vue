@@ -1,7 +1,3 @@
-<script setup>
-import Dashboard from "./views/Dashboard/index.vue";
-</script>
-
 <template>
   <div>
     <h1>TOOLS KIT</h1>
