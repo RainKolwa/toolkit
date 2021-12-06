@@ -1,6 +1,6 @@
 {
-  "name": "tool-kit",
-  "version": "0.0.0",
+  "name": "toolkit",
+  "version": "0.0.1",
   "scripts": {
     "start": "vite",
     "dev": "vite",
