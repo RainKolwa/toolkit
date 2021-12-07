@@ -4,7 +4,7 @@
  */
 export const removeTag = (content) => {
   return typeof content === "string"
-    ? content.replace(/<\/?[a-zA-Z].*?>+/gm, "")
+    ? content.replace(/<\/?[a-zA-Z!].*?>+/gm, "")
     : "";
 };
 
@@ -16,4 +16,19 @@ export const removeStyle = (content) => {
   return typeof content === "string"
     ? content.replace(/<style.*?>.*?<\/style>/gm, "")
     : "";
+};
+
+/**
+ * 移除空行
+ * @param {String} content html
+ */
+export const removeBlankLine = (content) => {
+  return typeof content === "string" ? content.replace(/\s*[\r\n]/g, "") : "";
+};
+
+/**
+ * 移除一行中开头的空白
+ */
+export const trimStart = (content) => {
+  return typeof content === "string" ? content.replace(/^\s*/g, "") : "";
 };

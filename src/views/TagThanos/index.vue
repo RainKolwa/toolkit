@@ -21,7 +21,12 @@
 </template>
 
 <script>
-import { removeTag, removeStyle } from "@/utils/html";
+import {
+  removeTag,
+  removeStyle,
+  removeBlankLine,
+  trimStart,
+} from "@/utils/html";
 
 export default {
   name: "TagThanos",
@@ -33,8 +38,10 @@ export default {
   },
   methods: {
     handleSubmit() {
-      const styleLess = removeStyle(this.content);
-      this.parsedContent = removeTag(styleLess);
+      let styleLess = removeStyle(this.content);
+      let tagLess = removeTag(styleLess);
+      let noBlankLine = removeBlankLine(tagLess);
+      this.parsedContent = trimStart(noBlankLine);
     },
     handleReset() {
       this.content = "";
