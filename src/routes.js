@@ -3,7 +3,7 @@ import TagThanos from "./views/TagThanos/index.vue";
 import NotFound from "./views/NotFound/index.vue";
 
 export default [
-  { path: "/", component: Dashboard, meta: { title: "首页" } },
+  { path: "/", component: Dashboard, meta: { title: "Rainkolwa's workshop" } },
   {
     path: "/html-tag-thanos",
     component: TagThanos,
