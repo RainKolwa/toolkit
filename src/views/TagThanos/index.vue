@@ -14,7 +14,7 @@
     <div class="mb-4">
       <textarea class="textarea" v-model="parsedContent" id="result"></textarea>
       <div class="actions">
-        <button @click="handleCopy" class="button">copy</button>
+        <button @click="handleCopy" class="button">{{ copyText }}</button>
       </div>
     </div>
   </div>
@@ -34,6 +34,7 @@ export default {
     return {
       content: "",
       parsedContent: "",
+      copyText: "copy",
     };
   },
   methods: {
@@ -50,6 +51,8 @@ export default {
     handleCopy() {
       document.querySelector("#result").select();
       document.execCommand("copy");
+      this.copyText = "copied";
+      setTimeout(() => (this.copyText = "copy"), 1000);
     },
   },
 };
