@@ -1,5 +1,5 @@
 <template>
-  <div class="page-tag-thanos container mx-auto">
+  <div class="container mx-auto px-4">
     <div class="mb-4">
       <textarea
         class="textarea"

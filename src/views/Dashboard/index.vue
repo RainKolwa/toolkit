@@ -1,6 +1,6 @@
 <template>
   <div class="page-dashboard">
-    <div class="container mx-auto pt-4">
+    <div class="container mx-auto pt-4 px-4">
       <ul
         class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 xl:gap-8 font-semibold text-gray-900 text-center"
       >

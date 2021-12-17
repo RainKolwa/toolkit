@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="header container mx-auto">
-      <h1>{{ title }}</h1>
+    <div class="header container mx-auto px-4">
+      <h1 class="uppercase">{{ title }}</h1>
     </div>
     <router-view></router-view>
   </div>
