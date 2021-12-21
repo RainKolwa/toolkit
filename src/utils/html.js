@@ -4,7 +4,7 @@
  */
 export const removeTag = (content) => {
   return typeof content === "string"
-    ? content.replace(/<\/?[a-zA-Z!].*?>+/gm, "")
+    ? content.replace(/<\/?[a-zA-Z!][\s\S]*?>+/gm, "")
     : "";
 };
 
